@@ -33,11 +33,16 @@ main {
 .search-box {
   width: 100%;
   max-width: 400px;
+ 
+  margin: 0 0 75px;
 }
 
 .search-box .search-bar {
+  margin-top: -25px;
   width: 100%;
   padding: 15px;
+  appearance: none;
+  background: none;
   border: none;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.8);
