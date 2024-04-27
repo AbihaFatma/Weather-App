@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+.app {
+  background-image: url('../src/assets/cold-wea.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.4s ease;
+}
+
+.app.warm {
+  background-image: url('../src/assets/hot-wea.jpg');
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-box .search-bar {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  font-size: 18px;
+  color: #555;
+  transition: background-color 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.location-box .location,
+.location-box .date {
+  text-align: center;
+}
+
+.location-box .location {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.location-box .date {
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather-box .temp {
+  padding: 20px 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.4s ease;
+}
+
+.weather-box .weather {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.details {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.loading {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  animation: pulse 1.5s infinite ease-in-out alternate;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
