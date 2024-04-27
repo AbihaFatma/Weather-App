@@ -1,6 +1,6 @@
 # Weather App
 
-Build a weather app in react js using Open Weather API.
+-Build a weather app in react js using Open Weather API.
 
 Follow Below Instructions:
 Use This command in cmd or terminal to download starter-code file:
